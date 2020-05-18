@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <Parallax>
-
-    </Parallax>
+    <Parallax />
+    <v-container>
+      <v-row>aksjdsad</v-row>
+    </v-container>
   </div>
 </template>
 

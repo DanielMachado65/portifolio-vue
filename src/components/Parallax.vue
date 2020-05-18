@@ -1,44 +1,46 @@
 <template>
-  <header>
-    <div class="parallax-layer layer-0">
-      <img
-        src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_0.png?raw=true"
-      />
-    </div>
-    <div class="parallax-layer layer-1">
-      <img
-        src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_1.png?raw=true"
-      />
-    </div>
-    <div class="parallax-layer layer-2">
-      <img
-        src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_2.png?raw=true"
-      />
-    </div>
-    <div class="parallax-layer layer-3">
-      <img
-        src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_3.png?raw=true"
-      />
-    </div>
-    <div class="parallax-layer layer-4">
-      <img
-        src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_4.png?raw=true"
-      />
-    </div>
-    <div class="parallax-layer layer-5">
-      <img
-        src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_5.png?raw=true"
-      />
-    </div>
-    <div class="parallax-layer layer-6">
-      <img
-        src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_6.png?raw=true"
-      />
-    </div>
-    <main>
-      <slot></slot>
-    </main>
-  </header>
+  <v-container>
+    <header>
+      <div class="parallax-layer layer-0">
+        <img
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_0.png?raw=true"
+        />
+      </div>
+      <div class="parallax-layer layer-1">
+        <img
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_1.png?raw=true"
+        />
+      </div>
+      <div class="parallax-layer layer-2">
+        <img
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_2.png?raw=true"
+        />
+      </div>
+      <div class="parallax-layer layer-3">
+        <img
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_3.png?raw=true"
+        />
+      </div>
+      <div class="parallax-layer layer-4">
+        <img
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_4.png?raw=true"
+        />
+      </div>
+      <div class="parallax-layer layer-5">
+        <img
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_5.png?raw=true"
+        />
+      </div>
+      <div class="parallax-layer layer-6">
+        <img
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_6.png?raw=true"
+        />
+      </div>
+      <main>
+        <slot></slot>
+      </main>
+    </header>
+  </v-container>
 </template>
 
 <script>
@@ -60,7 +62,6 @@ header {
   bottom: 0;
   margin-left: -1500px;
 }
-
 main {
   background: #2d112b;
   display: block;
@@ -71,7 +72,6 @@ main {
   height: 2000px;
   z-index: 2;
 }
-
 .parallax-layer {
   position: absolute;
   top: 0;
@@ -79,13 +79,11 @@ main {
   bottom: 0;
   left: 0;
 }
-
 .parallax-layer img {
   display: block;
   position: absolute;
   bottom: 0;
 }
-
 .layer-0 {
   transform: translateZ(-300px) scale(4);
 }
