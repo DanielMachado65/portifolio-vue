@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <Header />
-    <Menu />
-    <Body />
+    <Parallax>
+
+    </Parallax>
   </div>
 </template>
 
 <script>
-import { Header, Menu, Body } from "./components/index.js";
+import Parallax from "./components/Parallax.vue";
 
 export default {
   name: "App",
-  components: { Header, Menu, Body }
+  components: { Parallax }
 };
 </script>
 
