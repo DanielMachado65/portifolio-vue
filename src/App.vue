@@ -1,16 +1,17 @@
 <template>
   <div id="app">
     <Header />
+    <Menu />
     <Body />
   </div>
 </template>
 
 <script>
-import { Header, Body } from "./components/index.js";
+import { Header, Menu, Body } from "./components/index.js";
 
 export default {
   name: "App",
-  components: { Header, Body }
+  components: { Header, Menu, Body }
 };
 </script>
 
