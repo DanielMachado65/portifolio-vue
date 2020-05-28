@@ -115,11 +115,6 @@ a {
 }
 
 .hero-text {
-  background: linear-gradient(
-    rgba(105, 211, 252, 0.25) 0%,
-    rgba(255, 116, 161, 0.25) 86%,
-    rgba(1, 0, 0, 0.25) 100%
-  );
   background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: 7;
@@ -196,5 +191,22 @@ a {
   font-size: 1.25rem;
   margin-right: 0.25rem;
 }
+
+@media (min-width: 760px) {
+  .hero-text ul li {
+    visibility: visible;
+  }
+  
+  .text-container p:nth-of-type(1) {
+    font-size: 1rem;
+    width: 75%;
+    margin: 1rem 0;
+  }
+
+  .text-container p:nth-of-type(1) {
+    font-size: 0.86rem;
+  }
+}
+
 
 </style>
