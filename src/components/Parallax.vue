@@ -50,8 +50,6 @@ export default {
 </script>
 
 <style>
-
-
 a {
   text-decoration: none;
   color: #fff;
@@ -155,7 +153,7 @@ a {
 }
 
 .year-container h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   position: absolute;
   font-size: 9.5rem;
@@ -180,7 +178,6 @@ a {
   bottom: 20%;
 }
 
-
 .social-container {
   position: absolute;
   left: 2.5rem;
@@ -196,7 +193,7 @@ a {
   .hero-text ul li {
     visibility: visible;
   }
-  
+
   .text-container p:nth-of-type(1) {
     font-size: 1rem;
     width: 75%;
@@ -208,5 +205,15 @@ a {
   }
 }
 
-
+@media (min-width: 1126px) {
+  .sky,
+  .bushes,
+  .water,
+  .people1,
+  .people2,
+  .people3,
+  .hero-text {
+    background-size: contain;
+  }
+}
 </style>

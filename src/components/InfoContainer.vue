@@ -1,19 +1,19 @@
 <template>
   <div class="parallax-group info-container">
-      <img src="../assets/concert.jpg" alt="Lively and colourful concert" />
-        <div class="text-container">
-          <h2>This is your year.</h2>
-          <p>What would life be if we had no courage to attempt anything?</p>
-          <p>- Vincent Van Gogh</p>
-          <a href="#" class="btn">Get Started Now</a>
-        </div>
+    <img src="../assets/concert.jpg" alt="Lively and colourful concert" />
+    <div class="text-container">
+      <h2>This is your year.</h2>
+      <p>What would life be if we had no courage to attempt anything?</p>
+      <p>- Vincent Van Gogh</p>
+      <a href="#" class="btn">Get Started Now</a>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'InfoContainer'
-}
+  name: "InfoContainer"
+};
 </script>
 
 <style>
@@ -49,7 +49,6 @@ export default {
   font-size: 0.6rem;
   margin-bottom: 3rem;
 }
-
 
 @media (min-width: 760px) {
   .info-container {

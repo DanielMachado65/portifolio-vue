@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Parallax />
-    <info-container/>
+    <info-container />
   </div>
 </template>
 
@@ -11,12 +11,12 @@ import InfoContainer from "./components/InfoContainer.vue";
 
 export default {
   name: "App",
-  components: { Parallax, InfoContainer}
+  components: { Parallax, InfoContainer }
 };
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 
 * {
   padding: 0;
@@ -64,33 +64,4 @@ a {
   width: 100vw;
   transform-style: preserve-3d;
 }
-
-@media (min-width: 760px) {
-  .hero-text ul li {
-    visibility: visible;
-  }
-  
-  .text-container p:nth-of-type(1) {
-    font-size: 1rem;
-    width: 75%;
-    margin: 1rem 0;
-  }
-
-  .text-container p:nth-of-type(1) {
-    font-size: 0.86rem;
-  }
-}
-
-@media (min-width: 1126px) {
-  .sky,
-  .bushes,
-  .water,
-  .people1,
-  .people2,
-  .people3,
-  .hero-text {
-    background-size: contain;
-  }
-}
-
 </style>
