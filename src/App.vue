@@ -1,9 +1,15 @@
 <template>
   <div id="app">
     <Parallax />
-    <v-container class="parallax-group">
-      <v-row>aksjdsad</v-row>
-    </v-container>
+    <div class="parallax-group info-container">
+      <img src="./assets/concert.jpg" alt="Lively and colourful concert" />
+        <div class="text-container">
+          <h2>This is your year.</h2>
+          <p>What would life be if we had no courage to attempt anything?</p>
+          <p>- Vincent Van Gogh</p>
+          <a href="#" class="btn">Get Started Now</a>
+        </div>
+    </div>
   </div>
 </template>
 
@@ -17,14 +23,11 @@ export default {
 </script>
 
 <style>
-:root {
-  --webkit-font-smoothing: antialiased;
-  --moz-ozx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -32,34 +35,115 @@ html,
 body {
   width: 100%;
   height: 100%;
-  color: #ffffff;
+  color: #fff;
   background-color: #000;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
-#app{
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  border: 1.5px solid #fff;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: #000;
+  background: #fff;
+}
+
+#app {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 300px;
 }
 
-.parallax-group{
+.parallax-group {
   position: relative;
   height: 100vh;
   width: 100vw;
   transform-style: preserve-3d;
 }
 
-::-webkit-scrollbar {
-  width: 0.25rem;
+.info-container {
+  background: #000;
+  transform: translateZ(0) scale(1);
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-::-webkit-scrollbar-track {
-  background: #1e1e24;
+.info-container img {
+  width: 75%;
+  margin-bottom: 2.5rem;
+  filter: saturate(0.65);
 }
 
-::-webkit-scrollbar-thumb {
-  background: #000328;
+.info-container h2,
+.info-container p {
+  margin-bottom: 1rem;
 }
+
+.text-container p:nth-of-type(1) {
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin: 1rem 2.5rem;
+}
+
+.text-container p:nth-of-type(2) {
+  font-size: 0.6rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 760px) {
+  .hero-text ul li {
+    visibility: visible;
+  }
+
+  .info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+    align-items: center;
+    text-align: left;
+  }
+
+  .info-container img {
+    justify-self: end;
+    width: 75%;
+  }
+
+  .text-container p:nth-of-type(1) {
+    font-size: 1rem;
+    width: 75%;
+    margin: 1rem 0;
+  }
+
+  .text-container p:nth-of-type(1) {
+    font-size: 0.86rem;
+  }
+}
+
+@media (min-width: 1126px) {
+  .sky,
+  .bushes,
+  .water,
+  .people1,
+  .people2,
+  .people3,
+  .hero-text {
+    background-size: contain;
+  }
+}
+
 </style>
