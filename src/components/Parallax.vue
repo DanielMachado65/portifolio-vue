@@ -78,35 +78,35 @@ a {
 }
 
 .bushes {
-  background: url("../assets/bushes.png") no-repeat center;
+  background: url("../assets/main.png") no-repeat center;
   background-size: cover;
   transform: translateZ(-525px) scale(2.75);
   z-index: 2;
 }
 
 .water {
-  background: url("../assets/water.png") no-repeat center;
+  background: url("../assets/main.png") no-repeat center;
   background-size: cover;
   transform: translateZ(-400px) scale(2.33333333);
   z-index: 3;
 }
 
 .people1 {
-  background: url("../assets/people1.png") no-repeat center;
+  background: url("../assets/house1.png") no-repeat center;
   background-size: cover;
   transform: translateZ(-250px) scale(1.833333333);
   z-index: 4;
 }
 
 .people2 {
-  background: url("../assets/people2.png") no-repeat center;
+  background: url("../assets/house2.png") no-repeat center;
   background-size: cover;
   transform: translateZ(-125px) scale(1.4167);
   z-index: 5;
 }
 
 .people3 {
-  background: url("../assets/people3.png") no-repeat center;
+  background: url("../assets/lion.png") no-repeat center;
   background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: 6;

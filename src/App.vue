@@ -16,18 +16,12 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+:root {
+  --webkit-font-smoothing: antialiased;
+  --moz-ozx-font-smoothing: grayscale;
 }
 
-html,
 body {
-  width: 100%;
-  height: 100%;
   color: #fff;
   background-color: #000;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -59,9 +53,22 @@ a {
 }
 
 .parallax-group {
+  overflow: hidden;
   position: relative;
   height: 100vh;
   width: 100vw;
   transform-style: preserve-3d;
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+::-webkit-scrollbar-thumb {
+  background: coral;
 }
 </style>
