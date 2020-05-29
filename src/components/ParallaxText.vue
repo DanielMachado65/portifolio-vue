@@ -1,9 +1,10 @@
 <template>
-  <div class="layer hero-text">
-    <h2>Level Up Inc.</h2>
+  <div class="layer parallax-text">
+    <a href="#" class="btn">Compartilhe!</a>
 
     <div class="container-center">
       <h1>Daniel</h1>
+      <h2>Um pouco da história</h2>
     </div>
 
     <div class="social-container">
@@ -22,28 +23,26 @@
 
 <script>
 export default {
-  name: "HeroText"
+  name: "ParallaxText"
 };
 </script>
 
 <style>
-.hero-text {
+.parallax-text {
   z-index: 6;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container-center {
-  background: coral;
+.parallax-text .btn{
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
 }
 
-.hero-text h2 {
-  font-size: 1.25rem;
-  position: absolute;
-  left: 2.5rem;
-  top: 2.5rem;
+.container-center h2{
+  background: coral;
 }
 
 .social-container {
@@ -57,9 +56,4 @@ export default {
   margin-right: 0.8rem;
 }
 
-@media (min-width: 760px) {
-  .hero-text ul {
-    visibility: visible;
-  }
-}
 </style>

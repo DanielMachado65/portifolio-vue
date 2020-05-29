@@ -5,16 +5,16 @@
     <div class="layer house1"></div>
     <div class="layer house2"></div>
     <div class="layer lion"></div>
-    <hero-text />
+    <parallax-text />
   </div>
 </template>
 
 <script>
-import HeroText from "./HeroText.vue";
+import ParallaxText from "./ParallaxText.vue";
 
 export default {
   name: "Parallax",
-  components: { HeroText }
+  components: { ParallaxText }
 };
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="parallax-group info-container">
-    <img src="../assets/concert.jpg" alt="Lively and colourful concert" />
+    <img src="../assets/main.png" alt="Lively and colourful concert" />
     <div class="text-container">
       <h2>This is your year.</h2>
       <p>What would life be if we had no courage to attempt anything?</p>
