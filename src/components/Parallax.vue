@@ -1,12 +1,11 @@
 <template>
   <div class="parallax-group hero-container">
     <div class="layer sky"></div>
-    <div class="layer bushes"></div>
-    <div class="layer water"></div>
-    <div class="layer people1"></div>
-    <div class="layer people2"></div>
-    <div class="layer people3"></div>
-    <hero-text/>
+    <div class="layer main"></div>
+    <div class="layer house1"></div>
+    <div class="layer house2"></div>
+    <div class="layer lion"></div>
+    <hero-text />
   </div>
 </template>
 
@@ -35,39 +34,31 @@ export default {
   z-index: 1;
 }
 
-.bushes {
-  background: url("../assets/main.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-525px) scale(2.75);
-  z-index: 2;
-}
-
-.water {
+.main {
   background: url("../assets/main.png") no-repeat center;
   background-size: cover;
   transform: translateZ(-400px) scale(2.33333333);
-  z-index: 3;
+  z-index: 2;
 }
 
-.people1 {
+.house1 {
   background: url("../assets/house1.png") no-repeat center;
   background-size: cover;
   transform: translateZ(-250px) scale(1.833333333);
-  z-index: 4;
+  z-index: 3;
 }
 
-.people2 {
+.house2 {
   background: url("../assets/house2.png") no-repeat center;
   background-size: cover;
   transform: translateZ(-125px) scale(1.4167);
-  z-index: 5;
+  z-index: 4;
 }
 
-.people3 {
+.lion {
   background: url("../assets/lion.png") no-repeat center;
   background-size: cover;
   transform: translateZ(0) scale(1);
-  z-index: 6;
+  z-index: 5;
 }
-
 </style>

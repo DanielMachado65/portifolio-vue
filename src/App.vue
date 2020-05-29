@@ -23,7 +23,12 @@ export default {
 
 body {
   color: #fff;
-  background-color: #000;
+  background: rgb(65, 38, 19);
+  background: linear-gradient(
+    0deg,
+    rgba(65, 38, 19, 0.9136029411764706) 0%,
+    rgba(92, 147, 178, 0.8939950980392157) 96%
+  );
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
